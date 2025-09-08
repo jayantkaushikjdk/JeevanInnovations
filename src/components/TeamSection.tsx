@@ -16,7 +16,7 @@ const TeamSection = () => {
     },
     {
       id: 3,
-      name: "Zoya Parveen",
+      name: "Fatima Zoya Ali Khan",
       role: "Marketing Head",
       image: "src/assets/zoya.jpg",
       description: "UI/UX specialist with passion for user-centered design"
