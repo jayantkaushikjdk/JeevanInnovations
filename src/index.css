@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Jeevan Innovation Design System - Dark Theme with Cyan Accents */
+
+@layer base {
+  :root {
+    /* Dark theme base colors */
+    --background: 220 39% 11%;           /* #1a202c */
+    --surface: 220 26% 18%;              /* #2d3748 */
+    --surface-elevated: 220 26% 22%;     /* #374151 */
+    
+    --foreground: 220 14% 93%;           /* #f7fafc */
+    --muted-foreground: 220 9% 66%;      /* #a0aec0 */
+    
+    /* Cyan accent system */
+    --cyan-primary: 187 85% 53%;         /* #22d3ee */
+    --cyan-secondary: 187 85% 43%;       /* #06b6d4 */
+    --cyan-glow: 187 85% 63%;            /* #67e8f9 */
+    
+    /* Interactive states */
+    --hover-surface: 220 26% 25%;        /* Slightly lighter surface */
+    --active-surface: 220 26% 20%;       /* Slightly darker surface */
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(187 85% 53%) 0%, hsl(220 39% 11%) 50%, hsl(187 85% 53%) 100%);
+    --gradient-radial: radial-gradient(circle at center, hsl(187 85% 53% / 0.1) 0%, transparent 70%);
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 20px hsl(187 85% 53% / 0.3);
+    --shadow-card: 0 10px 25px hsl(220 39% 11% / 0.3);
+    --shadow-elevated: 0 20px 40px hsl(220 39% 11% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 0.75rem;
+  }
+}
+
+@layer components {
+  /* Custom fade-in animation */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  /* Pulse animation for backgrounds */
+  .pulse-glow {
+    animation: pulseGlow 4s ease-in-out infinite;
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Brand logo hover effect */
+  .logo-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .logo-hover:hover {
+    color: hsl(var(--cyan-glow));
+    transform: scale(1.05);
+  }
+  
+  /* Navigation link animations */
+  .nav-link {
+    position: relative;
+    transition: var(--transition-smooth);
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: hsl(var(--cyan-primary));
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link:hover {
+    color: hsl(var(--cyan-primary));
+    transform: translateY(-2px);
+  }
+  
+  /* Button variants */
+  .btn-primary {
+    background: hsl(var(--cyan-primary));
+    color: hsl(var(--background));
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: var(--transition-bounce);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background: hsl(var(--cyan-secondary));
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Card hover effects */
+  .card-hover {
+    background: hsl(var(--surface));
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-glow), var(--shadow-elevated);
+  }
+  
+  /* Form inputs */
+  .form-input {
+    background: hsl(var(--surface-elevated));
+    border: 1px solid hsl(var(--surface-elevated));
+    color: hsl(var(--foreground));
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    transition: var(--transition-smooth);
+    width: 100%;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: hsl(var(--cyan-primary));
+    box-shadow: 0 0 0 3px hsl(var(--cyan-primary) / 0.1);
+  }
+  
+  .form-input::placeholder {
+    color: hsl(var(--muted-foreground));
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--surface-elevated));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
