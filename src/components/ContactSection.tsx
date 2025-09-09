@@ -8,7 +8,7 @@ const ContactSection = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            📞 Contact Us
+             Contact Us
           </h2>
           
           <p 

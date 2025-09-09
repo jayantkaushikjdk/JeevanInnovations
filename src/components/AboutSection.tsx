@@ -8,7 +8,7 @@ const AboutSection = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            💡 About Jeevan Innovation
+             About Jeevan Innovation
           </h2>
           
           <p 
