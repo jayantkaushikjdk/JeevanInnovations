@@ -47,7 +47,7 @@ const TeamSection = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-32 h-34 rounded-full mx-auto object-cover border-4 border-cyan-primary/20 group-hover:border-cyan-primary/50 transition-all duration-300"
+                  className="w-32 h-44 rounded-full mx-auto object-cover border-4 border-cyan-primary/20 group-hover:border-cyan-primary/50 transition-all duration-300"
                 />
                 <div className="absolute inset-0 w-32 h-32 rounded-full mx-auto bg-gradient-to-tr from-cyan-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
