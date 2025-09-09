@@ -4,21 +4,21 @@ const TeamSection = () => {
       id: 1,
       name: "Jayant Kaushik",
       role: "Founder & CEO",
-      image: "https://drive.google.com/file/d/1vnC12RRitBhCPwXQ5IfvBDo3j5nMQk_g/view?usp=drive_link",
+      image: "src/assets/jayant.png",
       description: "Tech entrepreneur with 8+ years in digital transformation"
     },
     {
       id: 2,
       name: "Ankit Kumar",
       role: "Chief Technology Officer",
-      image: "https://drive.google.com/file/d/1sAB3vUeIIYM4j3aVzObJgnkraelTV0p3/view?usp=drive_link",
+      image: "src/assets/ankit.jpg",
       description: "Full-stack developer and system architecture expert"
     },
     {
       id: 3,
       name: "Fatima Zoya Ali Khan",
       role: "Marketing Head",
-      image: "https://drive.google.com/file/d/1_xtOOU-gosq1eUmgfWlkLvwCDKtih4On/view?usp=drive_link",
+      image: "src/assets/zoya.jpg",
       description: "UI/UX specialist with passion for user-centered design"
     }
   ];
