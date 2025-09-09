@@ -32,7 +32,7 @@ const ContactSection = () => {
                 <span className="text-2xl">📧</span>
               </div>
               <h3 className="font-bold text-foreground mb-2">Email</h3>
-              <p className="text-muted-foreground">contact@jeevaninnovation.com</p>
+              <p className="text-muted-foreground">jeevantechinnovations@gmail.com</p>
             </div>
             
             <div className="text-center">
@@ -40,7 +40,7 @@ const ContactSection = () => {
                 <span className="text-2xl">📱</span>
               </div>
               <h3 className="font-bold text-foreground mb-2">Phone</h3>
-              <p className="text-muted-foreground">+91 98765 43210</p>
+              <p className="text-muted-foreground">+91 9389848096</p>
             </div>
             
             <div className="text-center">
@@ -53,7 +53,7 @@ const ContactSection = () => {
           </div>
           
           <a 
-            href="mailto:contact@jeevaninnovation.com"
+            href="mailto:jeevantechinnovations@gmail.com"
             className="btn-primary text-lg px-8 py-4 inline-block"
             data-aos="zoom-in"
             data-aos-duration="800"
