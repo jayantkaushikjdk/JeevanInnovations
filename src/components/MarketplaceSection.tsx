@@ -8,7 +8,7 @@ const MarketplaceSection = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            🛒 Marketplace Solutions
+             Marketplace Solutions
           </h2>
           
           <p 

@@ -31,7 +31,7 @@ const PortfolioSection = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          🎯 Our Portfolio
+           Our Portfolio
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">

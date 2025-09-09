@@ -32,7 +32,7 @@ const QuoteSection = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              ✍️ Get Your Free Quote
+               Get Your Free Quote
             </h2>
             
             <p 

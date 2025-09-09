@@ -31,7 +31,7 @@ const TeamSection = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          👥 Founders & Board Members
+           Founders & Board Members
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
