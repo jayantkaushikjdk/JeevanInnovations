@@ -1,12 +1,14 @@
 const TeamSection = () => {
   const teamMembers = [
-    {
-      id: 1,
-      name: "Jayant Kaushik",
-      role: "Founder & CEO",
-      image: "/assets/jayant.png",
-      description: "Tech innovator and entrepreneur specializing in full-stack development, digital solutions, and strategic growth for startups and businesses."
-    },
+  {
+  id: 1,
+  name: <a href="https://jayantkaushik.com/portfolio" target="_blank" rel="noopener noreferrer">Jayant Kaushik</a>,
+  role: "Founder & CEO",
+  image: "/assets/jayant.png",
+  description: "Tech innovator and entrepreneur specializing in full-stack development, digital solutions, and strategic growth for startups and businesses." 
+}
+
+
     {
       id: 2,
       name: "Ankit Kumar",
