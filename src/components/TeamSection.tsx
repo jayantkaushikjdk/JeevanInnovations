@@ -2,7 +2,7 @@ const TeamSection = () => {
   const teamMembers = [
   {
   id: 1,
-  name: <a href="https://jayantkaushik.vercel.app/portfolio" target="_blank" rel="noopener noreferrer">Jayant Kaushik</a>,
+  name: <a href="https://jayantkaushik.vercel.app/" target="_blank" rel="noopener noreferrer">Jayant Kaushik</a>,
   role: "Founder & CEO",
   image: "/assets/jayant.png",
   description: "Tech innovator and entrepreneur specializing in full-stack development, digital solutions, and strategic growth for startups and businesses." 
