@@ -2,23 +2,22 @@ const TeamSection = () => {
   const teamMembers = [
   {
   id: 1,
-  name: <a href="https://jayantkaushik.com/portfolio" target="_blank" rel="noopener noreferrer">Jayant Kaushik</a>,
+  name: <a href="https://jayantkaushik.vercel.app/portfolio" target="_blank" rel="noopener noreferrer">Jayant Kaushik</a>,
   role: "Founder & CEO",
   image: "/assets/jayant.png",
   description: "Tech innovator and entrepreneur specializing in full-stack development, digital solutions, and strategic growth for startups and businesses." 
-}
-
+},
 
     {
       id: 2,
-      name: "Ankit Kumar",
+      name: <a href="https://ankit-ai-portfolio-showcase.lovable.app/" target="_blank" rel="noopener noreferrer">Ankit Kumar</a>,
       role: "Chief Technology Officer",
       image: "/assets/ankit.jpg",
       description: "AI/ML enthusiast and full-stack developer driving intelligent solutions and scalable web applications to solve real-world problems with data-driven innovation"
     },
     {
       id: 3,
-      name: "Fatima Zoya Ali Khan",
+      name: <a href="https://zoya-rose.vercel.app/" target="_blank" rel="noopener noreferrer">Fatima Zoya Ali Khan</a>,
       role: "Marketing Head",
       image: "/assets/zoya.jpg",
       description: "Cybersecurity expert with a strong background in securing digital solutions, driving strategic growth by bridging technology and customer needs through data-driven marketing and innovative solutions."
